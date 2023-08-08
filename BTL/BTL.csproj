@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{253C574F-7E22-48B0-BDAF-9325EF92EC7F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BTL</RootNamespace>
+    <AssemblyName>BTL</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fChiTietDatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fChiTietDatHang.Designer.cs">
+      <DependentUpon>fChiTietDatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fChiTietNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fChiTietNhapHang.Designer.cs">
+      <DependentUpon>fChiTietNhapHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDangNhap.Designer.cs">
+      <DependentUpon>fDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDonDatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDonDatHang.Designer.cs">
+      <DependentUpon>fDonDatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDonNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDonNhapHang.Designer.cs">
+      <DependentUpon>fDonNhapHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fKhachHang.Designer.cs">
+      <DependentUpon>fKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fNhanVien.Designer.cs">
+      <DependentUpon>fNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fReport.Designer.cs">
+      <DependentUpon>fReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fThi.Designer.cs">
+      <DependentUpon>fThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_RP_CTDH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_RP_CTDH.Designer.cs">
+      <DependentUpon>f_RP_CTDH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_RP_gia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_RP_gia.Designer.cs">
+      <DependentUpon>f_RP_gia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HamDungChung.cs" />
+    <Compile Include="fMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMain.Designer.cs">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLoaiHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLoaiHang.Designer.cs">
+      <DependentUpon>fLoaiHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMatHang.Designer.cs">
+      <DependentUpon>fMatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fNhaCungCap.Designer.cs">
+      <DependentUpon>fNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RP_CTDH.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RP_CTDH.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RP_gia_MH.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RP_gia_MH.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rp_thi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rp_thi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="fChiTietDatHang.resx">
+      <DependentUpon>fChiTietDatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fChiTietNhapHang.resx">
+      <DependentUpon>fChiTietNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDangNhap.resx">
+      <DependentUpon>fDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDonDatHang.resx">
+      <DependentUpon>fDonDatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDonNhapHang.resx">
+      <DependentUpon>fDonNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fKhachHang.resx">
+      <DependentUpon>fKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMain.resx">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLoaiHang.resx">
+      <DependentUpon>fLoaiHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMatHang.resx">
+      <DependentUpon>fMatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fNhaCungCap.resx">
+      <DependentUpon>fNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fNhanVien.resx">
+      <DependentUpon>fNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fReport.resx">
+      <DependentUpon>fReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fThi.resx">
+      <DependentUpon>fThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_RP_CTDH.resx">
+      <DependentUpon>f_RP_CTDH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_RP_gia.resx">
+      <DependentUpon>f_RP_gia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RP_CTDH.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RP_CTDH.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP_gia_MH.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RP_gia_MH.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rp_thi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rp_thi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
